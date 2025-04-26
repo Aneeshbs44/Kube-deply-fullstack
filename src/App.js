@@ -6,7 +6,7 @@ function App() {
   
   useEffect(() => {
     // Fetch data from the backend when the component mounts
-    fetch('http://localhost:5001/data') // Replace with your backend API URL
+    fetch('http://backend-service:5001/data') // Replace with your backend API URL
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.log('Error fetching data: ', error));
